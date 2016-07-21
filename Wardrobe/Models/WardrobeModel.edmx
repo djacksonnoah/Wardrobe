@@ -169,12 +169,10 @@
           <Property Name="TopID" Type="Int32" Nullable="false" />
           <Property Name="BottomID" Type="Int32" Nullable="false" />
           <Property Name="ShoeID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Outfits21" Relationship="Self.FK_Outfits2_Outfits2" FromRole="Outfits2" ToRole="Outfits21" />
-          <NavigationProperty Name="Outfits22" Relationship="Self.FK_Outfits2_Outfits2" FromRole="Outfits21" ToRole="Outfits2" />
-          <NavigationProperty Name="Wardrobeitem" Relationship="Self.FK_Outfits2_Wardrobeitems" FromRole="Outfits2" ToRole="Wardrobeitems" />
-          <NavigationProperty Name="Wardrobeitem1" Relationship="Self.FK_Outfits2_Wardrobeitems1" FromRole="Outfits2" ToRole="Wardrobeitems" />
-          <NavigationProperty Name="Wardrobeitem2" Relationship="Self.FK_Outfits2_Wardrobeitems2" FromRole="Outfits2" ToRole="Wardrobeitems" />
-          <NavigationProperty Name="Wardrobeitems" Relationship="Self.Accesories" FromRole="Outfits2" ToRole="Wardrobeitems" />
+          <NavigationProperty Name="Top" Relationship="Self.FK_Outfits2_Wardrobeitems" FromRole="Outfits2" ToRole="Wardrobeitems" />
+          <NavigationProperty Name="Bottom" Relationship="Self.FK_Outfits2_Wardrobeitems1" FromRole="Outfits2" ToRole="Wardrobeitems" />
+          <NavigationProperty Name="Shoes" Relationship="Self.FK_Outfits2_Wardrobeitems2" FromRole="Outfits2" ToRole="Wardrobeitems" />
+          <NavigationProperty Name="Accessories" Relationship="Self.Accesories" FromRole="Outfits2" ToRole="Wardrobeitems" />
         </EntityType>
         <EntityType Name="Type">
           <Key>

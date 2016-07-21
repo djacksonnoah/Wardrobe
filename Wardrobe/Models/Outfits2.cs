@@ -17,7 +17,7 @@ namespace Wardrobe.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Outfits2()
         {
-            this.Wardrobeitems = new HashSet<Wardrobeitem>();
+            this.Accessories = new HashSet<Wardrobeitem>();
         }
     
         public int OutfitID { get; set; }
@@ -25,12 +25,10 @@ namespace Wardrobe.Models
         public int BottomID { get; set; }
         public int ShoeID { get; set; }
     
-        public virtual Outfits2 Outfits21 { get; set; }
-        public virtual Outfits2 Outfits22 { get; set; }
-        public virtual Wardrobeitem Wardrobeitem { get; set; }
-        public virtual Wardrobeitem Wardrobeitem1 { get; set; }
-        public virtual Wardrobeitem Wardrobeitem2 { get; set; }
+        public virtual Wardrobeitem Top { get; set; }
+        public virtual Wardrobeitem Bottom { get; set; }
+        public virtual Wardrobeitem Shoes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Wardrobeitem> Wardrobeitems { get; set; }
+        public virtual ICollection<Wardrobeitem> Accessories { get; set; }
     }
 }
